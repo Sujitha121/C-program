@@ -20,3 +20,7 @@ private:
             cout << "1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit\n";
             cout << "Enter your choice: ";
             cin >> choice;
+	    switch (choice) {
+                case 1:
+                    checkBalance();
+                    break;
