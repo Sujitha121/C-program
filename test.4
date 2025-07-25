@@ -10,3 +10,7 @@ private:
         string pin;
         cout << "Enter your 4-digit PIN: ";
         cin >> pin;
+	if (pin != userPIN) {
+            cout << "Incorrect PIN. Access denied.\n";
+            return;
+        }
