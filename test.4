@@ -44,4 +44,8 @@ default:
     void deposit() {
         double amount;
         cout << "Enter deposit amount: ₹";
+	cin >> amount;
+        if (amount > 0) {
+            balance += amount;
+            cout << "Deposit successful.\n";
 
