@@ -56,3 +56,6 @@ void withdraw() {
         double amount;
         cout << "Enter withdrawal amount: ₹";
         cin >> amount;
+	if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            cout << "Withdrawal successful.\n";
